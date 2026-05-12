@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dmx1des2fgbl2"]
+
+[ext_resource type="Texture2D" uid="uid://c5snh4821bvgb" path="res://Imagenes/world-planet-earth-isolated-icon-free-vector.jpg" id="1_tbcrh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_laj61"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_240ik"]
+texture = ExtResource("1_tbcrh")
+
+[node name="tablero" type="Control" unique_id=1288707075]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="." unique_id=1477784445]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_laj61")
+
+[node name="Panel" type="Panel" parent="." unique_id=1643277961]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.5
+offset_top = -324.0
+offset_right = 340.5
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_240ik")
