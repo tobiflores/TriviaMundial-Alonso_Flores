@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://boomuibu7bb3m"]
+
+[ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_lnt83"]
+[ext_resource type="Script" uid="uid://d2di6mi3nr3y8" path="res://Escenas/menu.gd" id="1_p25xy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p25xy"]
+texture = ExtResource("1_lnt83")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17m5t"]
+bg_color = Color(0, 0.5137255, 0.8901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+expand_margin_left = 12.0
+expand_margin_top = 20.0
+expand_margin_right = 12.0
+expand_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cp3rd"]
+bg_color = Color(0, 0.5140783, 0.8916685, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+expand_margin_left = 24.0
+expand_margin_right = 24.0
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kim34"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.5137255, 0.8901961, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0.5137255, 0.8901961, 1)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8bcg"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.5137255, 0.8901961, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0.5137255, 0.8901961, 1)
+shadow_size = 5
+
+[node name="menu" type="Control" unique_id=1770198847]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p25xy")
+
+[node name="Panel" type="Panel" parent="." unique_id=1183876984]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_p25xy")
+
+[node name="Label2" type="Label" parent="." unique_id=1552026301]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 51.0
+offset_right = 758.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_17m5t")
+text = "QUIZ MUNDIAL"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=499139826]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.5
+offset_top = -47.0
+offset_right = 120.5
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2015666927]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.5137255, 0.8901961, 1)
+theme_override_colors/font_hover_color = Color(0, 0.5137255, 0.8901961, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_cp3rd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kim34")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v8bcg")
+text = "Jugar"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1223921208]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.5137255, 0.8901961, 1)
+theme_override_colors/font_hover_color = Color(0, 0.5137255, 0.8901961, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_cp3rd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kim34")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v8bcg")
+text = "Salir"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
