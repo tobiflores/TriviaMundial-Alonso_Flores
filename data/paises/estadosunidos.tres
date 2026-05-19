@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://cxlbe1kebh7y3"]
+
+[ext_resource type="Texture2D" uid="uid://bjihm6ob0prdn" path="res://Imagenes/usaflag.webp" id="1_67qfu"]
+[ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="1_g0ngh"]
+[ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="2_67qfu"]
+
+[sub_resource type="Resource" id="Resource_ju048"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿En qué ciudad se encuentra la Casa Blanca?"
+opciones = Array[String](["A) Nueva York ", "B) Los Angeles ", "C) Washington D.C. ", "D) Chicago"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_68lyt"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿En qué estado se encuentra Hollywood?"
+opciones = Array[String](["A) Nevada ", "B) Arizona ", "C) California ", "D) Florida"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_a38s2"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué famoso actor protagonizó la saga de películas \"Rocky\"?"
+opciones = Array[String](["A) Arnold Schwarzenegger ", "B) Bruce Willis ", "C) Sylvester Stallone ", "D) Chuck Norris"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_s1e14"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué famoso científico americano inventó la bombilla eléctrica?"
+opciones = Array[String](["A) Thomas Edison ", "B) Benjamin Franklin ", "C) Nikola Tesla ", "D) Alexander Graham Bell"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_uca0k"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué famosa estatua fue un regalo de Francia a Estados Unidos?"
+opciones = Array[String](["A) El Toro de Wall Street ", "B) El Monte Rushmore ", "C) El Monumento a Lincoln ", "D) La Estatua de la Libertad "])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[resource]
+script = ExtResource("2_67qfu")
+pais = "Estados Unidos"
+bandera = ExtResource("1_67qfu")
+preguntas = Array[ExtResource("1_g0ngh")]([SubResource("Resource_ju048"), SubResource("Resource_68lyt"), SubResource("Resource_a38s2"), SubResource("Resource_s1e14"), SubResource("Resource_uca0k")])

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://boomuibu7bb3m"]
 
 [ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_lnt83"]
-[ext_resource type="Script" uid="uid://d2di6mi3nr3y8" path="res://Escenas/menu.gd" id="1_p25xy"]
+[ext_resource type="Script" uid="uid://d2di6mi3nr3y8" path="res://Scripts/menu.gd" id="1_p25xy"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p25xy"]
 texture = ExtResource("1_lnt83")
