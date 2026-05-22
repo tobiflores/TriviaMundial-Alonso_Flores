@@ -31,15 +31,48 @@ enunciado = "¿Qué famoso científico americano inventó la bombilla eléctrica
 opciones = Array[String](["A) Thomas Edison ", "B) Benjamin Franklin ", "C) Nikola Tesla ", "D) Alexander Graham Bell"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
+[sub_resource type="Resource" id="Resource_67qfu"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué famosa arquitectura histórica fue un regalo de Francia a Estados Unidos?"
+opciones = Array[String](["A) El Toro de Wall Street ", "B) El Monte Rushmore ", "C) El Monumento a Lincoln ", "D) La Estatua de la Libertad"])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_pn6xu"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿ Cuál de estas ligas deportivas no es de Estados Unidos?"
+opciones = Array[String](["A) NBA ", "B) NFS", "C) NHL ", "D) NFL"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
 [sub_resource type="Resource" id="Resource_uca0k"]
 script = ExtResource("1_g0ngh")
-enunciado = "¿Qué famosa estatua fue un regalo de Francia a Estados Unidos?"
-opciones = Array[String](["A) El Toro de Wall Street ", "B) El Monte Rushmore ", "C) El Monumento a Lincoln ", "D) La Estatua de la Libertad "])
-indice_correcto = 3
+enunciado = "¿Qué ciudad es conocida como “La Gran Manzana”?"
+opciones = Array[String](["A) Los Angeles ", "B) Miami ", "C) Nueva York ", "D) Boston"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_hywpu"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué famoso director creó las películas “Jurassic Park” y “E.T.”?"
+opciones = Array[String](["A) Martin Scorsese ", "B) Steven Spielberg ", "C) Peter Jackson  ", " D) James Cameron"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_lyv3t"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué celebración estadounidense homenajea a los soldados caídos en guerra?"
+opciones = Array[String](["A) Memorial Day ", " B) Veterans Day ", "C) Labor Day ", "D) Honor Day"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_544r1"]
+script = ExtResource("1_g0ngh")
+enunciado = "¿Qué estado estadounidense tiene la mayor población?"
+opciones = Array[String](["A) Washington ", "B) Florida ", "C) Nueva York ", "D) California "])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [resource]
 script = ExtResource("2_67qfu")
 pais = "Estados Unidos"
 bandera = ExtResource("1_67qfu")
-preguntas = Array[ExtResource("1_g0ngh")]([SubResource("Resource_ju048"), SubResource("Resource_68lyt"), SubResource("Resource_a38s2"), SubResource("Resource_s1e14"), SubResource("Resource_uca0k")])
+preguntas = Array[ExtResource("1_g0ngh")]([SubResource("Resource_ju048"), SubResource("Resource_68lyt"), SubResource("Resource_a38s2"), SubResource("Resource_s1e14"), SubResource("Resource_67qfu"), SubResource("Resource_pn6xu"), SubResource("Resource_uca0k"), SubResource("Resource_hywpu"), SubResource("Resource_lyv3t"), SubResource("Resource_544r1")])

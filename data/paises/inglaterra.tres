@@ -1,3 +1,80 @@
-[gd_resource type="Resource" format=3 uid="uid://beacfur6cik36"]
+[gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://beacfur6cik36"]
+
+[ext_resource type="Texture2D" uid="uid://lm64ijgop0py" path="res://Imagenes/englandflag.png" id="1_h38a0"]
+[ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="2_3p800"]
+[ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="3_a0ya7"]
+
+[sub_resource type="Resource" id="Resource_gxppn"]
+script = ExtResource("2_3p800")
+enunciado = "¿De qué ciudad son originarios The Beatles?"
+opciones = Array[String](["A) Londres ", "B) Manchester ", "C) Liverpool ", "D) Birmingham"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_nlfvs"]
+script = ExtResource("2_3p800")
+enunciado = "¿Quién escribió Romeo y Julieta?"
+opciones = Array[String](["A) Charles Dickens ", "B) Oscar Wilde ", "C) Jane Austen ", "D) William Shakespeare "])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_f8vrx"]
+script = ExtResource("2_3p800")
+enunciado = "¿Cuántas veces ganó Inglaterra el Mundial?"
+opciones = Array[String](["A) 0 ", "B) 1 ", "C) 2 ", "D) 3"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_mg37p"]
+script = ExtResource("2_3p800")
+enunciado = "¿Qué animal aparece en el escudo real de Inglaterra?"
+opciones = Array[String](["A) Águila ", "B) Dragón ", "C) León ", "D) Caballo"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_p5hs7"]
+script = ExtResource("2_3p800")
+enunciado = "¿En qué deporte es famoso el torneo de Wimbledon?"
+opciones = Array[String](["A) Golf ", "B) Tenis ", "C) Cricket ", "D) Rugby"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_j2r4f"]
+script = ExtResource("2_3p800")
+enunciado = "¿Cuál es la ciudad más grande de Inglaterra?"
+opciones = Array[String](["A) Londres ", "B) Birmingham ", "C) Manchester ", "D) Sheffield"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_rh0j6"]
+script = ExtResource("2_3p800")
+enunciado = "¿Cómo se llama la residencia oficial del rey de Inglaterra?"
+opciones = Array[String](["A) Windsor Castle ", "B) Hampton Court ", "C) Kensington Palace ", "D) Buckingham Palace "])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_lavef"]
+script = ExtResource("2_3p800")
+enunciado = "¿Cuál de estas bandas no es británica?"
+opciones = Array[String](["A) Pink Floyd ", "B) One Direction ", "C) Coldplay ", "D) Metallica "])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_48bdc"]
+script = ExtResource("2_3p800")
+enunciado = "¿Qué actor británico interpretó a Batman en la trilogía de Christopher Nolan?"
+opciones = Array[String](["A) Hugh Grant ", "B) Daniel Craig ", "C) Christian Bale ", "D) Colin Firth"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_hh2m2"]
+script = ExtResource("2_3p800")
+enunciado = "¿Cuál es el himno nacional de Inglaterra?"
+opciones = Array[String](["A) Rule Britannia ", "B) God Save the King ", "C) Swing Low Sweet Chariot ", "D) Land of Hope and Glory"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [resource]
+script = ExtResource("3_a0ya7")
+pais = "Inglaterra"
+bandera = ExtResource("1_h38a0")
+preguntas = Array[ExtResource("2_3p800")]([SubResource("Resource_gxppn"), SubResource("Resource_nlfvs"), SubResource("Resource_f8vrx"), SubResource("Resource_mg37p"), SubResource("Resource_p5hs7"), SubResource("Resource_j2r4f"), SubResource("Resource_rh0j6"), SubResource("Resource_lavef"), SubResource("Resource_48bdc"), SubResource("Resource_hh2m2")])
