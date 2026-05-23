@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://mwlh76ws766a"]
 
 [ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_mr4ue"]
+[ext_resource type="Script" uid="uid://crtwxap3l6qcg" path="res://Scripts/elegir_pais.gd" id="1_t3e3d"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3e3d"]
 texture = ExtResource("1_mr4ue")
@@ -72,6 +73,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_t3e3d")
 
 [node name="Panel" type="Panel" parent="." unique_id=135103691]
 layout_mode = 0

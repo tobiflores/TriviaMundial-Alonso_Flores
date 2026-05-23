@@ -1,8 +1,12 @@
 extends Node
 
+var datos_pais: DatosPais = null
 var pais_actual: DatosPais
 var cola_preguntas: Array[Pregunta] = []
 var indiceActual: int = 0
+
+func _ready() -> void:
+	iniciar(datos_pais)
 
 func iniciar(datos: DatosPais):
 	pais_actual = datos
@@ -12,7 +16,7 @@ func iniciar(datos: DatosPais):
 
 func mostrar_pregunta(indice: int):
 	var preguntaActual: Pregunta = cola_preguntas[indice]
-	$LabelPregunta.text = preguntaActual.enunciado
+	$Label.text = preguntaActual.enunciado
 	var opciones_mezcladas = preguntaActual.opciones.duplicate()
 	var respuesta_correcta = opciones_mezcladas[preguntaActual.indice_correcto]
 	opciones_mezcladas.shuffle()

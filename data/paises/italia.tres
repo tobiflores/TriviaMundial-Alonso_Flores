@@ -1,3 +1,8 @@
-[gd_resource type="Resource" format=3 uid="uid://cqi5sv7lkn7tr"]
+[gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://cqi5sv7lkn7tr"]
+
+[ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="1_e33m3"]
+[ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="2_n007m"]
 
 [resource]
+script = ExtResource("2_n007m")
+pais = "Italia"
