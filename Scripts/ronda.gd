@@ -5,9 +5,6 @@ var pais_actual: DatosPais
 var cola_preguntas: Array[Pregunta] = []
 var indiceActual: int = 0
 
-func _ready() -> void:
-	iniciar(datos_pais)
-
 func iniciar(datos: DatosPais):
 	pais_actual = datos
 	cola_preguntas = datos.preguntas.duplicate()
