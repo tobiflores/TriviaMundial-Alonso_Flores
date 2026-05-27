@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://cxlbe1kebh7y3"]
 
-[ext_resource type="Texture2D" uid="uid://bjihm6ob0prdn" path="res://Imagenes/usaflag.webp" id="1_67qfu"]
+[ext_resource type="Texture2D" uid="uid://cbpu3ouvrp3br" path="res://Imagenes/usaflag.webp" id="1_67qfu"]
 [ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="1_g0ngh"]
 [ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="2_67qfu"]
 
