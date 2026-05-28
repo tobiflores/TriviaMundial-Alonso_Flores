@@ -7,69 +7,69 @@
 [sub_resource type="Resource" id="Resource_gxppn"]
 script = ExtResource("2_3p800")
 enunciado = "¿De qué ciudad son originarios The Beatles?"
-opciones = Array[String](["A) Londres ", "B) Manchester ", "C) Liverpool ", "D) Birmingham"])
+opciones = Array[String](["Londres ", "Manchester ", "Liverpool ", "Birmingham"])
 indice_correcto = 2
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_nlfvs"]
 script = ExtResource("2_3p800")
 enunciado = "¿Quién escribió Romeo y Julieta?"
-opciones = Array[String](["A) Charles Dickens ", "B) Oscar Wilde ", "C) Jane Austen ", "D) William Shakespeare "])
+opciones = Array[String](["Charles Dickens ", "Oscar Wilde ", "Jane Austen ", "William Shakespeare "])
 indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_f8vrx"]
 script = ExtResource("2_3p800")
 enunciado = "¿Cuántas veces ganó Inglaterra el Mundial?"
-opciones = Array[String](["A) 0 ", "B) 1 ", "C) 2 ", "D) 3"])
+opciones = Array[String](["0 ", "1 ", "2 ", "3"])
 indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_mg37p"]
 script = ExtResource("2_3p800")
 enunciado = "¿Qué animal aparece en el escudo real de Inglaterra?"
-opciones = Array[String](["A) Águila ", "B) Dragón ", "C) León ", "D) Caballo"])
+opciones = Array[String](["Águila ", "Dragón ", "León ", "Caballo"])
 indice_correcto = 2
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_p5hs7"]
 script = ExtResource("2_3p800")
 enunciado = "¿En qué deporte es famoso el torneo de Wimbledon?"
-opciones = Array[String](["A) Golf ", "B) Tenis ", "C) Cricket ", "D) Rugby"])
+opciones = Array[String](["Golf ", "Tenis ", "Cricket ", "Rugby"])
 indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_j2r4f"]
 script = ExtResource("2_3p800")
 enunciado = "¿Cuál es la ciudad más grande de Inglaterra?"
-opciones = Array[String](["A) Londres ", "B) Birmingham ", "C) Manchester ", "D) Sheffield"])
+opciones = Array[String](["Londres ", "Birmingham ", "Manchester ", "Sheffield"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_rh0j6"]
 script = ExtResource("2_3p800")
 enunciado = "¿Cómo se llama la residencia oficial del rey de Inglaterra?"
-opciones = Array[String](["A) Windsor Castle ", "B) Hampton Court ", "C) Kensington Palace ", "D) Buckingham Palace "])
+opciones = Array[String](["Windsor Castle ", "Hampton Court ", "Kensington Palace ", "Buckingham Palace "])
 indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_lavef"]
 script = ExtResource("2_3p800")
 enunciado = "¿Cuál de estas bandas no es británica?"
-opciones = Array[String](["A) Pink Floyd ", "B) One Direction ", "C) Coldplay ", "D) Metallica "])
+opciones = Array[String](["Pink Floyd ", "One Direction ", "Coldplay ", "Metallica "])
 indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_48bdc"]
 script = ExtResource("2_3p800")
 enunciado = "¿Qué actor británico interpretó a Batman en la trilogía de Christopher Nolan?"
-opciones = Array[String](["A) Hugh Grant ", "B) Daniel Craig ", "C) Christian Bale ", "D) Colin Firth"])
+opciones = Array[String](["Hugh Grant ", "Daniel Craig ", "Christian Bale ", "Colin Firth"])
 indice_correcto = 2
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_hh2m2"]
 script = ExtResource("2_3p800")
 enunciado = "¿Cuál es el himno nacional de Inglaterra?"
-opciones = Array[String](["A) Rule Britannia ", "B) God Save the King ", "C) Swing Low Sweet Chariot ", "D) Land of Hope and Glory"])
+opciones = Array[String](["Rule Britannia ", "God Save the King ", "Swing Low Sweet Chariot ", "Land of Hope and Glory"])
 indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 

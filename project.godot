@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Juego-QuizMundial"
-run/main_scene="uid://b76b4tn2ant5j"
+run/main_scene="uid://boomuibu7bb3m"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GestorJuego="*uid://dxtq1digls66a"
 
 [physics]
 
