@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://dge05ag0w21gp"]
+
+[ext_resource type="Script" uid="uid://tlklps0vb8ye" path="res://Escenas/nombres.gd" id="1_4q6ss"]
+[ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_fa8ap"]
+[ext_resource type="FontFile" uid="uid://bu2mkiafsdks0" path="res://Fuentes/ChangaOne-Regular.ttf" id="3_f40uu"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4q6ss"]
+texture = ExtResource("1_fa8ap")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q6ss"]
+bg_color = Color(0, 0.5140783, 0.8916685, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+expand_margin_left = 24.0
+expand_margin_right = 24.0
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f40uu"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.5137255, 0.8901961, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0.5137255, 0.8901961, 1)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcruh"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.5137255, 0.8901961, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0.5137255, 0.8901961, 1)
+shadow_size = 5
+
+[node name="Control" type="Control" unique_id=1594532928]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4q6ss")
+
+[node name="Panel" type="Panel" parent="." unique_id=2042794522]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4q6ss")
+
+[node name="Jugador1" type="Label" parent="." unique_id=1811033148]
+layout_mode = 0
+offset_left = 308.0
+offset_top = 209.0
+offset_right = 453.0
+offset_bottom = 251.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 1:"
+
+[node name="Jugador2" type="Label" parent="." unique_id=649602697]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 323.0
+offset_right = 454.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 2:"
+
+[node name="NombreJ1" type="LineEdit" parent="." unique_id=229957390]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 215.0
+offset_right = 674.5
+offset_bottom = 254.0
+max_length = 18
+
+[node name="NombreJ2" type="LineEdit" parent="." unique_id=827274605]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 330.0
+offset_right = 673.5
+offset_bottom = 365.0
+max_length = 18
+
+[node name="Jugar" type="Button" parent="." unique_id=851276690]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 468.0
+offset_right = 618.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.5137255, 0.8901961, 1)
+theme_override_colors/font_hover_color = Color(0, 0.5137255, 0.8901961, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_4q6ss")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f40uu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bcruh")
+text = "Jugar"
+
+[node name="Label" type="Label" parent="." unique_id=1086710668]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 55.0
+offset_right = 1120.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(0.80904394, 0.15094766, 0.36718357, 1)
+theme_override_fonts/font = ExtResource("3_f40uu")
+theme_override_font_sizes/font_size = 36
+text = "COMPLETÁ LOS NOMBRES DE CADA JUGADOR"
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]

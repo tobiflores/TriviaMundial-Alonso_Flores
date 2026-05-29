@@ -107,7 +107,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=2015666927]
+[node name="Comenzar" type="Button" parent="VBoxContainer" unique_id=2015666927]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0.5137255, 0.8901961, 1)
@@ -116,9 +116,9 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_cp3rd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_kim34")
 theme_override_styles/hover = SubResource("StyleBoxFlat_v8bcg")
-text = "Jugar"
+text = "Comenzar"
 
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1223921208]
+[node name="Salir" type="Button" parent="VBoxContainer" unique_id=1223921208]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0.5137255, 0.8901961, 1)
@@ -129,5 +129,5 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_kim34")
 theme_override_styles/hover = SubResource("StyleBoxFlat_v8bcg")
 text = "Salir"
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Comenzar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_button_2_pressed"]

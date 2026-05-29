@@ -12,8 +12,13 @@ func iniciar(datos: DatosPais):
 		return not GestorJuego.preguntaUsada(datos.pais, p.enunciado))
 	cola_preguntas.shuffle()
 	mostrar_pregunta(0)
+	if cola_preguntas.is_empty():
+		$Label.text = "No hay más preguntas para este país"
+		return
 
 func mostrar_pregunta(indice: int):
+	$BotonContinuar.visible = false
+	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
 	indice_pregunta_actual = indice
 	var preguntaActual: Pregunta = cola_preguntas[indice]
 	$Label.text = preguntaActual.enunciado
@@ -22,6 +27,8 @@ func mostrar_pregunta(indice: int):
 	opciones_mezcladas.shuffle()
 	indiceActual = opciones_mezcladas.find(respuesta_correcta)
 	var botones = $BotonesOpciones.get_children()
+	for boton in botones:
+		boton.modulate = Color.WHITE
 	for i in range(botones.size()):
 		botones[i].text = opciones_mezcladas[i]
 		botones[i].disabled = false
@@ -38,9 +45,12 @@ func verificar_respuesta(indice: int):
 		botones[indice].modulate = Color.GREEN
 		$BotonContinuar.visible = true
 		GestorJuego.marcar_pregunta_usada(pais_actual.pais, cola_preguntas[indice_pregunta_actual].enunciado)
+		GestorJuego.respuesta_correcta()
 	else:
 		botones[indice].modulate = Color.RED
 		botones[indiceActual].modulate = Color.GREEN
+		$BotonContinuar.visible = true
+		GestorJuego.respuesta_incorrecta()
 
 func cincuenta_cincuenta():
 	var botones = $BotonesOpciones.get_children()
@@ -54,11 +64,9 @@ func cincuenta_cincuenta():
 
 func _on__50_pressed():
 	cincuenta_cincuenta()
-	print("cincuenta presionado")
 	$Boton50.disabled = true
 
 func _on_boton_llamada_pressed() -> void:
-	print("llamada usada")
 	$BotonLlamada.disabled = true
 
 func _on_boton_continuar_pressed() -> void:

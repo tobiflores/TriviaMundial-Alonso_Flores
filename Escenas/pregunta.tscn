@@ -83,35 +83,25 @@ offset_right = 1152.0
 offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_aj2lq")
 
-[node name="Label2" type="Label" parent="." unique_id=1284104238]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -552.0
-offset_top = 34.0
-offset_right = -409.0
-offset_bottom = 80.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_1gt84")
-text = "jugador 0"
-
 [node name="Label" type="Label" parent="." unique_id=854750548]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -419.0
+offset_left = -421.0
 offset_top = 150.0
-offset_right = 417.0
+offset_right = 419.0
 offset_bottom = 196.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_1gt84")
 text = "¿Cuál de estas no forma parte de las 20 regiones de Italia?"
+
+[node name="Turno" type="Label" parent="." unique_id=1609211838]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="Boton50" type="TextureButton" parent="." unique_id=1850822666]
 layout_mode = 1

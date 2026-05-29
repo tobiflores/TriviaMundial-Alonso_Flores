@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_mr4ue"]
 [ext_resource type="Script" uid="uid://crtwxap3l6qcg" path="res://Scripts/elegir_pais.gd" id="1_t3e3d"]
+[ext_resource type="FontFile" uid="uid://bu2mkiafsdks0" path="res://Fuentes/ChangaOne-Regular.ttf" id="3_wihna"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3e3d"]
 texture = ExtResource("1_mr4ue")
@@ -92,16 +93,22 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_wihna")
 text = "Elegir pais"
 
-[node name="Label2" type="Label" parent="." unique_id=1440276571]
+[node name="Turno" type="Label" parent="." unique_id=961815233]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 37.0
-offset_right = 222.0
-offset_bottom = 83.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_wihna")
-text = "jugador 0"
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 123.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("3_wihna")
+theme_override_font_sizes/font_size = 35
+
+[node name="Puntaje" type="Label" parent="." unique_id=1020827509]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 254.0
+offset_bottom = 92.0
+theme_override_fonts/font = ExtResource("3_wihna")
+theme_override_font_sizes/font_size = 35
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=93247964]
 layout_mode = 1
