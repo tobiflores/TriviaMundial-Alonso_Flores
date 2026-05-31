@@ -70,4 +70,4 @@ func _on_boton_llamada_pressed() -> void:
 	$BotonLlamada.disabled = true
 
 func _on_boton_continuar_pressed() -> void:
-	get_tree().change_scene_to_file("res://Escenas/elegir_pais.tscn")
+	get_tree().change_scene_to_file("res://Escenas/tablero.tscn")

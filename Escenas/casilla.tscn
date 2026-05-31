@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://l61hrupdwils"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eiy1e"]
+size = Vector2(42, 40)
+
+[node name="casilla" type="Node2D" unique_id=738404893]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2052984008]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=230926715]
+shape = SubResource("RectangleShape2D_eiy1e")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D" unique_id=801479177]
+offset_left = -21.0
+offset_top = -20.0
+offset_right = 21.0
+offset_bottom = 20.0
+color = Color(0.17249683, 0.8720917, 0.43959695, 1)
+metadata/_edit_use_anchors_ = true
