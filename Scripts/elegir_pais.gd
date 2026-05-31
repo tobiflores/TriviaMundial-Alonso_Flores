@@ -1,7 +1,6 @@
 extends Control
 
 func _ready() -> void:
-	print("elegir_pais _ready ejecutado")
 	$GridContainer/Button6.pressed.connect(_al_clickear_bandera.bind("estadosunidos"))
 	$GridContainer/Button.pressed.connect(_al_clickear_bandera.bind("argentina"))
 	$GridContainer/Button4.pressed.connect(_al_clickear_bandera.bind("inglaterra"))
