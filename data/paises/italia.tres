@@ -1,8 +1,79 @@
 [gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://cqi5sv7lkn7tr"]
 
 [ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="1_e33m3"]
+[ext_resource type="Texture2D" uid="uid://dfkm7msxpsku6" path="res://Imagenes/italyflag.png" id="1_n007m"]
 [ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="2_n007m"]
+
+[sub_resource type="Resource" id="Resource_5xpj4"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Cuál de estas no forma parte de las 20 regiones de Italia?"
+opciones = Array[String](["Sicilia", "Toscana", "Piamonte", "Comuni"])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_n4pwl"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Cuál de estos jugadores no es campeón del mundo con su país?"
+opciones = Array[String](["Francesco Totti ", "Marco Materazzi ", "Paolo Maldini ", "Gennaro Gattuso"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_kbm0l"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Qué postre tradicional lleva café y mascarpone?"
+opciones = Array[String](["Cannoli ", "Tiramisú ", "Gelato ", "Panettone"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_md7pe"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Qué mar rodea gran parte de Italia?"
+opciones = Array[String](["Mar Caribe", "Mar Báltico ", "Mar Negro ", "Mar Mediterráneo "])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_86wl7"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Qué famoso circuito de Fórmula 1 se encuentra en Italia?"
+opciones = Array[String](["Monza", "Verona ", "Roma ", "Nápoles"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_pk0hk"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Cuál de estos quesos se usa típicamente en una ensalada caprese?"
+opciones = Array[String](["Parmigiano ", "Pecorino ", "Mozzarella ", "Ricotta"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_lpbrm"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Qué marca de autos utiliza un tridente como logo?"
+opciones = Array[String](["Ferrari ", "Maserati ", "Lamborghini ", "Alfa Romeo"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_pbygs"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Qué comida italiana suele prepararse con arroz y caldo?"
+opciones = Array[String](["Ravioli ", "Risotto ", "Bruschetta ", "Focaccia"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_ibb78"]
+script = ExtResource("1_e33m3")
+enunciado = "¿Qué famoso explorador italiano le dio nombre a América?"
+opciones = Array[String](["Américo Vespucio", "Cristobal Colón ", "Marco Polo ", "Giovanni Caboto"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_di7y0"]
+script = ExtResource("1_e33m3")
+enunciado = " ¿Con qué instrumento se asocia al músico italiano Antonio Vivaldi?"
+opciones = Array[String](["Piano ", "Flauta", "Trompeta ", "Violín"])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [resource]
 script = ExtResource("2_n007m")
 pais = "Italia"
+bandera = ExtResource("1_n007m")
+preguntas = Array[ExtResource("1_e33m3")]([SubResource("Resource_5xpj4"), SubResource("Resource_n4pwl"), SubResource("Resource_kbm0l"), SubResource("Resource_md7pe"), SubResource("Resource_86wl7"), SubResource("Resource_pk0hk"), SubResource("Resource_lpbrm"), SubResource("Resource_pbygs"), SubResource("Resource_ibb78"), SubResource("Resource_di7y0")])
