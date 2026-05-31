@@ -180,7 +180,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_7rpbm")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_lcbh8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_cxjyo")
-text = "Alemania"
+text = "Japón"
 
 [node name="Button6" type="Button" parent="GridContainer" unique_id=1295386621]
 layout_mode = 2

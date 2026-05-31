@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dge05ag0w21gp"]
 
-[ext_resource type="Script" uid="uid://tlklps0vb8ye" path="res://Scripts/nombres.gd" id="1_4q6ss"]
+[ext_resource type="Script" uid="uid://canma8fxftydi" path="res://Escenas/nombres.gd" id="1_4q6ss"]
 [ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_fa8ap"]
 [ext_resource type="FontFile" uid="uid://bu2mkiafsdks0" path="res://Fuentes/ChangaOne-Regular.ttf" id="3_f40uu"]
 
@@ -124,6 +124,6 @@ offset_bottom = 119.0
 theme_override_colors/font_color = Color(0.80904394, 0.15094766, 0.36718357, 1)
 theme_override_fonts/font = ExtResource("3_f40uu")
 theme_override_font_sizes/font_size = 36
-text = "COMPLETÁ LOS NOMBRES DE CADA JUGADOR"
+text = "COMPLETÁ LOS NOMBRES DE CADA  JUGADOR"
 
 [connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]

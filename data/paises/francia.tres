@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://dkj5py2fd0jyw"]
+
+[ext_resource type="Texture2D" uid="uid://dfmsycskkf4q7" path="res://Imagenes/franceflag.webp" id="1_jgcmg"]
+[ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="2_d4md7"]
+[ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="3_65by6"]
+
+[sub_resource type="Resource" id="Resource_hhlkw"]
+script = ExtResource("2_d4md7")
+enunciado = "¿Qué famoso postre francés es una masa hueca rellena de crema?"
+opciones = Array[String](["Gruyère ", "Madeleine ", "Éclair ", "Macaron"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_qj6v8"]
+script = ExtResource("2_d4md7")
+enunciado = "¿Qué famoso río atraviesa París?"
+opciones = Array[String](["Ródano ", "Loira ", "Sena", "Garona"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_6f73v"]
+script = ExtResource("2_d4md7")
+enunciado = "¿Qué jugador francés ganó la Champions League con el Real Madrid en 2022?"
+opciones = Array[String](["Karim Benzema", "Aurélien Tchouaméni", "Raphael Varane", "Todos los anteriores"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_aoxui"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_r48tf"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_pqa63"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_07s1i"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_bicaw"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_4gsfg"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_7auxa"]
+script = ExtResource("2_d4md7")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[resource]
+script = ExtResource("3_65by6")
+pais = "Francia"
+bandera = ExtResource("1_jgcmg")
+preguntas = Array[ExtResource("2_d4md7")]([SubResource("Resource_hhlkw"), SubResource("Resource_qj6v8"), SubResource("Resource_6f73v"), SubResource("Resource_aoxui"), SubResource("Resource_r48tf"), SubResource("Resource_pqa63"), SubResource("Resource_07s1i"), SubResource("Resource_bicaw"), SubResource("Resource_4gsfg"), SubResource("Resource_7auxa")])
