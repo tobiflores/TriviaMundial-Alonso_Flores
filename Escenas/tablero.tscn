@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://dmx1des2fgbl2"]
 
+[ext_resource type="Script" uid="uid://doyrqfc0drhlv" path="res://Scripts/tablero.gd" id="1_cg76r"]
 [ext_resource type="Texture2D" uid="uid://c5snh4821bvgb" path="res://Imagenes/world-planet-earth-isolated-icon-free-vector.jpg" id="1_tbcrh"]
+[ext_resource type="PackedScene" uid="uid://l61hrupdwils" path="res://Escenas/casilla.tscn" id="3_iqwsw"]
+[ext_resource type="PackedScene" uid="uid://bqm3a7grbbao1" path="res://Escenas/jugador.tscn" id="4_o1jf0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_laj61"]
 bg_color = Color(1, 1, 1, 1)
@@ -15,6 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cg76r")
 
 [node name="Panel2" type="Panel" parent="." unique_id=1477784445]
 layout_mode = 0
@@ -36,3 +40,103 @@ offset_bottom = 324.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_240ik")
+
+[node name="casillas" type="Node" parent="." unique_id=684062926]
+
+[node name="casilla" parent="casillas" unique_id=738404893 instance=ExtResource("3_iqwsw")]
+position = Vector2(225, 40)
+
+[node name="casilla2" parent="casillas" unique_id=1054716632 instance=ExtResource("3_iqwsw")]
+position = Vector2(224, 100)
+
+[node name="casilla3" parent="casillas" unique_id=1266008358 instance=ExtResource("3_iqwsw")]
+position = Vector2(224, 167)
+
+[node name="casilla4" parent="casillas" unique_id=696843356 instance=ExtResource("3_iqwsw")]
+position = Vector2(224, 234)
+
+[node name="casilla5" parent="casillas" unique_id=417910319 instance=ExtResource("3_iqwsw")]
+position = Vector2(224, 301)
+
+[node name="casilla6" parent="casillas" unique_id=1444356046 instance=ExtResource("3_iqwsw")]
+position = Vector2(224, 366)
+
+[node name="casilla7" parent="casillas" unique_id=1161090081 instance=ExtResource("3_iqwsw")]
+position = Vector2(225, 430)
+
+[node name="casilla8" parent="casillas" unique_id=727129793 instance=ExtResource("3_iqwsw")]
+position = Vector2(226, 495)
+
+[node name="casilla9" parent="casillas" unique_id=1032422855 instance=ExtResource("3_iqwsw")]
+position = Vector2(227, 555)
+
+[node name="casilla10" parent="casillas" unique_id=1624742907 instance=ExtResource("3_iqwsw")]
+position = Vector2(228, 614)
+
+[node name="casilla11" parent="casillas" unique_id=1153026792 instance=ExtResource("3_iqwsw")]
+position = Vector2(293, 614)
+
+[node name="casilla12" parent="casillas" unique_id=497073178 instance=ExtResource("3_iqwsw")]
+position = Vector2(356, 614)
+
+[node name="casilla13" parent="casillas" unique_id=1430057215 instance=ExtResource("3_iqwsw")]
+position = Vector2(418, 614)
+
+[node name="casilla14" parent="casillas" unique_id=432651841 instance=ExtResource("3_iqwsw")]
+position = Vector2(480, 614)
+
+[node name="casilla15" parent="casillas" unique_id=1107492845 instance=ExtResource("3_iqwsw")]
+position = Vector2(542, 614)
+
+[node name="casilla16" parent="casillas" unique_id=1539053597 instance=ExtResource("3_iqwsw")]
+position = Vector2(603, 614)
+
+[node name="casilla17" parent="casillas" unique_id=634015420 instance=ExtResource("3_iqwsw")]
+position = Vector2(668, 614)
+
+[node name="casilla18" parent="casillas" unique_id=1308839219 instance=ExtResource("3_iqwsw")]
+position = Vector2(732, 614)
+
+[node name="casilla19" parent="casillas" unique_id=909757162 instance=ExtResource("3_iqwsw")]
+position = Vector2(799, 614)
+
+[node name="casilla20" parent="casillas" unique_id=972648089 instance=ExtResource("3_iqwsw")]
+position = Vector2(864, 614)
+
+[node name="casilla21" parent="casillas" unique_id=759987855 instance=ExtResource("3_iqwsw")]
+position = Vector2(928, 615)
+
+[node name="casilla22" parent="casillas" unique_id=1750675401 instance=ExtResource("3_iqwsw")]
+position = Vector2(927, 556)
+
+[node name="casilla23" parent="casillas" unique_id=602421441 instance=ExtResource("3_iqwsw")]
+position = Vector2(927, 490)
+
+[node name="casilla24" parent="casillas" unique_id=1346815349 instance=ExtResource("3_iqwsw")]
+position = Vector2(928, 424)
+
+[node name="casilla25" parent="casillas" unique_id=795803156 instance=ExtResource("3_iqwsw")]
+position = Vector2(926, 360)
+
+[node name="casilla26" parent="casillas" unique_id=976115299 instance=ExtResource("3_iqwsw")]
+position = Vector2(926, 296)
+
+[node name="casilla27" parent="casillas" unique_id=27690787 instance=ExtResource("3_iqwsw")]
+position = Vector2(926, 227)
+
+[node name="casilla28" parent="casillas" unique_id=67594290 instance=ExtResource("3_iqwsw")]
+position = Vector2(925, 161)
+
+[node name="casilla29" parent="casillas" unique_id=808559650 instance=ExtResource("3_iqwsw")]
+position = Vector2(925, 100)
+
+[node name="casilla30" parent="casillas" unique_id=927604189 instance=ExtResource("3_iqwsw")]
+position = Vector2(925, 42)
+
+[node name="jugadores" type="Node" parent="." unique_id=140651021]
+
+[node name="jugador" parent="jugadores" unique_id=595103400 instance=ExtResource("4_o1jf0")]
+position = Vector2(137, 35)
+
+[node name="jugador2" parent="jugadores" unique_id=702146986 instance=ExtResource("4_o1jf0")]
+position = Vector2(176, 35)

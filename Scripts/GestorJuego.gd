@@ -5,6 +5,9 @@ var jugadorActual: int = 0
 var puntajes: Array[int] = [0, 0]
 var correctasConsecutivas: int = 0
 var nombres: Array[String] = ["Jugador 1", "Jugador 2"]
+var posiciones: Array[int] = [0, 0]
+var debe_mover: bool = false
+var jugador_que_mueve: int = 0
 
 func marcar_pregunta_usada(pais: String, enunciado: String):
 	if not preguntas_usadas.has(pais):
@@ -19,6 +22,8 @@ func preguntaUsada(pais: String, enunciado: String) -> bool:
 func respuesta_correcta():
 	puntajes[jugadorActual] += 1
 	correctasConsecutivas += 1
+	debe_mover = true
+	jugador_que_mueve = jugadorActual
 	if correctasConsecutivas >= 3:
 		pasar_turno()
 
