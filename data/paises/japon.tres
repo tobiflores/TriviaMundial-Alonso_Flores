@@ -1,3 +1,54 @@
-[gd_resource type="Resource" format=3 uid="uid://bwmpqxq5j7ahl"]
+[gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://bwmpqxq5j7ahl"]
+
+[ext_resource type="Texture2D" uid="uid://xow6toydu0py" path="res://Imagenes/japan.svg" id="1_mxmvn"]
+[ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="2_nbesp"]
+[ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="3_r7hnj"]
+
+[sub_resource type="Resource" id="Resource_bafbs"]
+script = ExtResource("2_nbesp")
+enunciado = "¿Cual de estas marcas de autos no es japonesa?"
+opciones = Array[String](["Toyota", "Mitsubishi", "Hyundai", "Nissan"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_yxmwy"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_itijn"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_ckroo"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_txbqh"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_wyg3o"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_gq7eg"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_atokt"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_g6tlj"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_vk8a7"]
+script = ExtResource("2_nbesp")
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [resource]
+script = ExtResource("3_r7hnj")
+pais = "Japon"
+bandera = ExtResource("1_mxmvn")
+preguntas = Array[ExtResource("2_nbesp")]([SubResource("Resource_bafbs"), SubResource("Resource_yxmwy"), SubResource("Resource_itijn"), SubResource("Resource_ckroo"), SubResource("Resource_txbqh"), SubResource("Resource_wyg3o"), SubResource("Resource_gq7eg"), SubResource("Resource_atokt"), SubResource("Resource_g6tlj"), SubResource("Resource_vk8a7")])

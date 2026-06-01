@@ -8,7 +8,7 @@
 texture = ExtResource("1_mr4ue")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wihna"]
-bg_color = Color(0, 0.5137255, 0.8901961, 1)
+bg_color = Color(0.818346, 0.3313626, 0.10022517, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -84,14 +84,14 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_t3e3d")
 
 [node name="Label3" type="Label" parent="." unique_id=394874207]
 layout_mode = 0
-offset_left = 491.0
+offset_left = 333.0
 offset_top = 35.0
-offset_right = 642.0
+offset_right = 781.0
 offset_bottom = 81.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_wihna")
-text = "Elegir país"
+text = "                 Elegir país"
 
 [node name="Turno" type="Label" parent="." unique_id=961815233]
 layout_mode = 0

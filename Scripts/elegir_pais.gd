@@ -6,7 +6,7 @@ func _ready() -> void:
 	$GridContainer/Button4.pressed.connect(_al_clickear_bandera.bind("inglaterra"))
 	$GridContainer/Button2.pressed.connect(_al_clickear_bandera.bind("francia"))
 	$GridContainer/Button3.pressed.connect(_al_clickear_bandera.bind("italia"))
-	$GridContainer/Button5.pressed.connect(_al_clickear_bandera.bind("alemania"))
+	$GridContainer/Button5.pressed.connect(_al_clickear_bandera.bind("japon"))
 	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
 	$Puntaje.text = "%s: %d\n%s: %d" % [GestorJuego.nombres[0], GestorJuego.puntajes[0], GestorJuego.nombres[1], GestorJuego.puntajes[1]]
 
