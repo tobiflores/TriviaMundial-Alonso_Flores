@@ -26,46 +26,46 @@ metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_aoxui"]
 script = ExtResource("2_d4md7")
-enunciado = "¿En que batalla perdio Napoleon?"
+enunciado = "¿En qué batalla perdió Napoleon?"
 opciones = Array[String](["Austerlitz", "Jena", "Wagram", "Waterloo"])
 indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_r48tf"]
 script = ExtResource("2_d4md7")
-enunciado = "¿En que año empezo  la Revolucion Francesa?"
+enunciado = "¿En qué año empezó la Revolución Francesa?"
 opciones = Array[String](["1789", "1802", "1766", "1794"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_pqa63"]
 script = ExtResource("2_d4md7")
-enunciado = "¿Quien es el actual presidente de Francia?"
+enunciado = "¿Quién es el actual presidente de Francia?"
 opciones = Array[String](["Jaques Chirac", "Emmanuel Macron", "Francois Hollande", "Jean-Luc Godard"])
 indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_07s1i"]
 script = ExtResource("2_d4md7")
-enunciado = "¿Cual de estas no es una ciudad francesa?"
+enunciado = "¿Cuál de estas no es una ciudad francesa?"
 opciones = Array[String](["El Havre", "Angers", "Reims", "Saint-Marc"])
 indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_bicaw"]
 script = ExtResource("2_d4md7")
-enunciado = "¿Como se llama el movimiento artistico que hacen Monet y Renoir?"
+enunciado = "¿Cómo se llama el movimiento artístico que hacen Monet y Renoir?"
 opciones = Array[String](["Impresionismo", "Cubismo", "Romanticismo", "Surrealismo"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_4gsfg"]
 script = ExtResource("2_d4md7")
-enunciado = "¿Que posicion ocupa Francia entre los paises mas visitados del mundo?"
+enunciado = "¿Qué posición ocupa Francia entre los paises mas visitados del mundo?"
 opciones = Array[String](["Primero", "Segundo", "Tercero", "Ninguno de los anteriores"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_7auxa"]
 script = ExtResource("2_d4md7")
-enunciado = "¿Cual de estos artistas NO es frances?"
+enunciado = "¿Cuál de estos artistas NO es francés?"
 opciones = Array[String](["Daft Punk", "Sean Paul", "David Guetta", "Bob Sinclar"])
 indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"

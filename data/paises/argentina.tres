@@ -1,3 +1,78 @@
-[gd_resource type="Resource" format=3 uid="uid://cx6cdclfluqsm"]
+[gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://cx6cdclfluqsm"]
+
+[ext_resource type="Texture2D" path="res://Imagenes/argentina.jpg" id="1_hvcwb"]
+[ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="2_ll6vw"]
+[ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="3_c7pus"]
+
+[sub_resource type="Resource" id="Resource_mu0ad"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Con cuál de estos Premios Nobel Argentina no fue distinguido? "
+opciones = Array[String](["Nobel de Medicina", "Nobel de La Paz", "Nobel de Literatura", "Nobel de Química"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_k35pp"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Cuál de estos escritores NO es argentino?"
+opciones = Array[String](["José Hernández", "Julio Cortazar", "Jorge Luis Borges", "Horacio Quiroga"])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_djjvo"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Cuál es el equipo europeo con más jugadores argentinos?"
+opciones = Array[String](["Atlético de Madrid", "Strasburgo", "Aston Villa", "Brujas de Bélgica"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_dldg7"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Cuál de estas guerras es la más antigua?"
+opciones = Array[String](["Campaña del Desierto", "Invasiones Inglesas", "Guerra de Malvinas", "Guerra de la Triple Alianza"])
+indice_correcto = 1
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_bynrl"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Contra qué selección ganó Argentina la final olímpica en Atenas 2004?"
+opciones = Array[String](["España ", "Grecia ", "Italia", "Estados Unidos"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_j5lbx"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Qué famoso guitarrista argentino fue el fundador de Almendra y Pescado Rabioso?"
+opciones = Array[String](["Luis Alberto Spinetta", "Fito Páez", "Charly García", "Vicentico"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_ihbjl"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿En qué edición de los JJOO Argentina ganó su última medalla olímpica?"
+opciones = Array[String](["Beijing 2008", "Londres 2012", "Río 2016", "París 2024"])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_6l5s1"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Qué famoso actor argentino protagonizó \"El Secreto de Sus Ojos\"?"
+opciones = Array[String](["Ricardo Darín", "Leonardo Sbaraglia", "Guillermo Francella", "Luis Brandoni"])
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_l0yba"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Qué famosa provincia argentina es conocida por sus bodegas y producción de vino?"
+opciones = Array[String](["Córdoba ", "San Juan", "Mendoza ", " La Rioja"])
+indice_correcto = 2
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
+
+[sub_resource type="Resource" id="Resource_mufn8"]
+script = ExtResource("2_ll6vw")
+enunciado = "¿Cuál de estas provincias NO se llama igual que su capital?"
+opciones = Array[String](["Formosa", "Santa Fe", "Corrientes", "Santa Cruz"])
+indice_correcto = 3
+metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [resource]
+script = ExtResource("3_c7pus")
+pais = "Argentina"
+bandera = ExtResource("1_hvcwb")
+preguntas = Array[ExtResource("2_ll6vw")]([SubResource("Resource_mu0ad"), SubResource("Resource_k35pp"), SubResource("Resource_djjvo"), SubResource("Resource_dldg7"), SubResource("Resource_bynrl"), SubResource("Resource_j5lbx"), SubResource("Resource_ihbjl"), SubResource("Resource_6l5s1"), SubResource("Resource_l0yba"), SubResource("Resource_mufn8")])

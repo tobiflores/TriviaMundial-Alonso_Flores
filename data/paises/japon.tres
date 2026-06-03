@@ -13,38 +13,60 @@ metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_yxmwy"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Qué famoso monte japonés es considerado sagrado y es el más alto del país?"
+opciones = Array[String](["Monte Koya ", " Monte Aso ", "Monte Hiei ", "Monte Fuji"])
+indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_itijn"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Qué famosa empresa de videojuegos creó a Megaman?"
+opciones = Array[String](["Capcom", "Sega", "Konami", "Square Enix"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_ckroo"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Qué famoso anime sigue a shinigamis y hollows en una ciudad llamada Karakura?"
+opciones = Array[String](["Full Metal Alchemist", "Bleach", "Shingeki No Kyogin", "Demon Slayer"])
+indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_txbqh"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Qué famosa ciudad fue la capital imperial durante más de mil años antes que Tokio?"
+opciones = Array[String](["Nagoya", "Osaka", "Kioto", "Yokohama"])
+indice_correcto = 2
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_wyg3o"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Cuál es el deporte nacional de Japón?"
+opciones = Array[String](["Sumo", "Karate", "Vóley", "Béisbol"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_gq7eg"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Qué mundial de fútbol se jugó en Japón?"
+opciones = Array[String](["1962", "1974", "1990", "2002"])
+indice_correcto = 3
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_atokt"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Qué famosa película japonesa de Hayao Miyazaki sigue a dos niños que descubren a un espíritu del bosque?"
+opciones = Array[String](["Mi Vecino Totoro", "El Viaje De Chihiro", "El Castillo Ambulante", "Princesa Mononoke"])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_g6tlj"]
 script = ExtResource("2_nbesp")
+enunciado = "¿Cuál de estos personajes ficticios no es de origen japonés?"
+opciones = Array[String](["Astro Boy", "Mulan", "Hello Kitty", "Godzilla"])
+indice_correcto = 1
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [sub_resource type="Resource" id="Resource_vk8a7"]
 script = ExtResource("2_nbesp")
+opciones = Array[String](["", "", "", ""])
 metadata/_custom_type_script = "uid://bvh63cpdgav1d"
 
 [resource]
