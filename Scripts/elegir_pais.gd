@@ -9,6 +9,7 @@ func _ready() -> void:
 	$GridContainer/Button5.pressed.connect(_al_clickear_bandera.bind("japon"))
 	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
 	$Puntaje.text = "%s: %d\n%s: %d" % [GestorJuego.nombres[0], GestorJuego.puntajes[0], GestorJuego.nombres[1], GestorJuego.puntajes[1]]
+	_actualizar_botones()
 
 func _al_clickear_bandera(codigo_pais: String):
 	var ruta = "res://data/paises/%s.tres" % codigo_pais
@@ -18,3 +19,23 @@ func _al_clickear_bandera(codigo_pais: String):
 	pregunta_scene.iniciar(datos_pais)
 	get_tree().current_scene.queue_free()
 	get_tree().current_scene = pregunta_scene
+	
+func _actualizar_botones():
+	var paises = {
+		$GridContainer/Button6: "estadosunidos",
+		$GridContainer/Button: "argentina",
+		$GridContainer/Button4: "inglaterra",
+		$GridContainer/Button2: "francia",
+		$GridContainer/Button3: "italia",
+		$GridContainer/Button5: "japon"
+	}
+	for boton in paises:
+		var codigo = paises[boton]
+		var ruta = "res://data/paises/%s.tres" % codigo
+		var datos: DatosPais = load(ruta)
+		var quedan = datos.preguntas.filter(func(p):
+			return not GestorJuego.preguntaUsada(datos.pais, p.enunciado)
+		)
+		if quedan.is_empty():
+			boton.modulate = Color.RED
+			boton.disabled = true

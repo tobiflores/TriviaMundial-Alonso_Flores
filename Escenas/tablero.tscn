@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://doyrqfc0drhlv" path="res://Scripts/tablero.gd" id="1_cg76r"]
 [ext_resource type="Texture2D" uid="uid://c5snh4821bvgb" path="res://Imagenes/world-planet-earth-isolated-icon-free-vector.jpg" id="1_tbcrh"]
-[ext_resource type="PackedScene" path="res://Escenas/casilla.tscn" id="3_iqwsw"]
-[ext_resource type="PackedScene" path="res://Escenas/jugador.tscn" id="4_o1jf0"]
+[ext_resource type="PackedScene" uid="uid://l61hrupdwils" path="res://Escenas/casilla.tscn" id="3_iqwsw"]
+[ext_resource type="PackedScene" uid="uid://bqm3a7grbbao1" path="res://Escenas/jugador.tscn" id="4_o1jf0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_laj61"]
 bg_color = Color(1, 1, 1, 1)
@@ -43,8 +43,11 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_240ik")
 
 [node name="casillas" type="Node" parent="." unique_id=684062926]
 
-[node name="casilla" parent="casillas" unique_id=738404893 instance=ExtResource("3_iqwsw")]
-position = Vector2(225, 40)
+[node name="inicio" parent="casillas" unique_id=738404893 instance=ExtResource("3_iqwsw")]
+position = Vector2(156, 39)
+
+[node name="casilla" parent="casillas" unique_id=1145655815 instance=ExtResource("3_iqwsw")]
+position = Vector2(224, 40)
 
 [node name="casilla2" parent="casillas" unique_id=1054716632 instance=ExtResource("3_iqwsw")]
 position = Vector2(224, 100)

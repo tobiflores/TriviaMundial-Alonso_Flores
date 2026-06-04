@@ -25,10 +25,11 @@ func _colocar_jugador(jugador_idx: int):
 	var pos = GestorJuego.posiciones[jugador_idx]
 	var nombre_casilla: String
 	if pos == 0:
+		nombre_casilla = "inicio"
+	elif pos == 1:
 		nombre_casilla = "casilla"
 	else:
 		nombre_casilla = "casilla%d" % pos
-
 	var casilla = $casillas.get_node_or_null(nombre_casilla)
 	if casilla == null:
 		push_error("No se encontró: %s" % nombre_casilla)

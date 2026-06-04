@@ -41,10 +41,10 @@ func verificar_respuesta(indice: int):
 	for boton in botones:
 		boton.disabled = true
 		boton.add_theme_stylebox_override("disabled", boton.get_theme_stylebox("normal"))
+		GestorJuego.marcar_pregunta_usada(pais_actual.pais, cola_preguntas[indice_pregunta_actual].enunciado)
 	if indice == indiceActual:
 		botones[indice].modulate = Color.GREEN
 		$BotonContinuar.visible = true
-		GestorJuego.marcar_pregunta_usada(pais_actual.pais, cola_preguntas[indice_pregunta_actual].enunciado)
 		GestorJuego.respuesta_correcta()
 	else:
 		botones[indice].modulate = Color.RED

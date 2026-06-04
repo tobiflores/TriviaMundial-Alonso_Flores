@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DatosPais" format=3 uid="uid://cx6cdclfluqsm"]
 
-[ext_resource type="Texture2D" path="res://Imagenes/argentina.jpg" id="1_hvcwb"]
+[ext_resource type="Texture2D" uid="uid://svekbb0xjc1c" path="res://Imagenes/argentina.jpg" id="1_hvcwb"]
 [ext_resource type="Script" uid="uid://bvh63cpdgav1d" path="res://Scripts/pregunta.gd" id="2_ll6vw"]
 [ext_resource type="Script" uid="uid://dn546t0plwfgf" path="res://Scripts/datospais.gd" id="3_c7pus"]
 
