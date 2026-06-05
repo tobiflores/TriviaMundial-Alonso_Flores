@@ -102,11 +102,19 @@ offset_bottom = 27.0
 theme_override_fonts/font = ExtResource("3_wihna")
 theme_override_font_sizes/font_size = 35
 
-[node name="Puntaje" type="Label" parent="." unique_id=1020827509]
+[node name="Puntaje1" type="Label" parent="." unique_id=1020827509]
 layout_mode = 0
 offset_top = 54.0
 offset_right = 254.0
 offset_bottom = 92.0
+theme_override_fonts/font = ExtResource("3_wihna")
+theme_override_font_sizes/font_size = 35
+
+[node name="Puntaje2" type="Label" parent="." unique_id=1246701126]
+layout_mode = 0
+offset_top = 108.0
+offset_right = 254.0
+offset_bottom = 146.0
 theme_override_fonts/font = ExtResource("3_wihna")
 theme_override_font_sizes/font_size = 35
 

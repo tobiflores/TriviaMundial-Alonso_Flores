@@ -8,7 +8,13 @@ func _ready() -> void:
 	$GridContainer/Button3.pressed.connect(_al_clickear_bandera.bind("italia"))
 	$GridContainer/Button5.pressed.connect(_al_clickear_bandera.bind("japon"))
 	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
-	$Puntaje.text = "%s: %d\n%s: %d" % [GestorJuego.nombres[0], GestorJuego.puntajes[0], GestorJuego.nombres[1], GestorJuego.puntajes[1]]
+	var colores = [Color(1, 0.3, 0.3), Color(0.3, 0.5, 1)]
+	$Turno.modulate = colores[GestorJuego.jugadorActual]
+	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
+	$Puntaje1.modulate = colores[0]
+	$Puntaje1.text = "%s: %d" % [GestorJuego.nombres[0], GestorJuego.puntajes[0]]
+	$Puntaje2.modulate = colores[1]
+	$Puntaje2.text = "%s: %d" % [GestorJuego.nombres[1], GestorJuego.puntajes[1]]
 	_actualizar_botones()
 
 func _al_clickear_bandera(codigo_pais: String):
