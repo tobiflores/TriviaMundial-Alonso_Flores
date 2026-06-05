@@ -12,9 +12,6 @@ func iniciar(datos: DatosPais):
 		return not GestorJuego.preguntaUsada(datos.pais, p.enunciado))
 	cola_preguntas.shuffle()
 	mostrar_pregunta(0)
-	if cola_preguntas.is_empty():
-		$Label.text = "No hay más preguntas para este país"
-		return
 
 func mostrar_pregunta(indice: int):
 	$BotonContinuar.visible = false
@@ -35,6 +32,12 @@ func mostrar_pregunta(indice: int):
 		botones[i].visible = true
 		var idx = i
 		botones[i].pressed.connect(func(): verificar_respuesta(idx), CONNECT_ONE_SHOT)
+	var jugador = GestorJuego.jugadorActual
+	if GestorJuego.usos_cincuenta[jugador] <= 0:
+		$Boton50.disabled = true
+	else:
+		$Boton50.disabled = false
+	$usos.text = "%d" % GestorJuego.usos_cincuenta[jugador]
 
 func verificar_respuesta(indice: int):
 	var botones = $BotonesOpciones.get_children()
@@ -63,8 +66,13 @@ func cincuenta_cincuenta():
 	botones[incorrectos[1]].visible = false
 
 func _on__50_pressed():
+	var jugador = GestorJuego.jugadorActual
+	if GestorJuego.usos_cincuenta[jugador] <= 0:
+		return
 	cincuenta_cincuenta()
+	GestorJuego.usos_cincuenta[jugador] -= 1
 	$Boton50.disabled = true
+	$usos.text = "%d" % GestorJuego.usos_cincuenta[jugador]
 
 func _on_boton_llamada_pressed() -> void:
 	$BotonLlamada.disabled = true

@@ -41,14 +41,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_240ik")
 
-[node name="jugadores" type="Node" parent="." unique_id=140651021]
-
-[node name="jugador" parent="jugadores" unique_id=595103400 instance=ExtResource("4_o1jf0")]
-position = Vector2(137, 35)
-
-[node name="jugador2" parent="jugadores" unique_id=702146986 instance=ExtResource("4_o1jf0")]
-position = Vector2(176, 35)
-
 [node name="casillas" type="Node" parent="." unique_id=684062926]
 
 [node name="inicio" parent="casillas" unique_id=738404893 instance=ExtResource("3_iqwsw")]
@@ -143,3 +135,11 @@ position = Vector2(925, 100)
 
 [node name="casilla30" parent="casillas" unique_id=927604189 instance=ExtResource("3_iqwsw")]
 position = Vector2(925, 42)
+
+[node name="jugadores" type="Node" parent="." unique_id=140651021]
+
+[node name="jugador" parent="jugadores" unique_id=595103400 instance=ExtResource("4_o1jf0")]
+position = Vector2(137, 35)
+
+[node name="jugador2" parent="jugadores" unique_id=702146986 instance=ExtResource("4_o1jf0")]
+position = Vector2(176, 35)
