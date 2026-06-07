@@ -1,6 +1,9 @@
 extends Control
 
 func _ready():
+	var colores = [Color(1, 0.3, 0.3), Color(0.3, 0.5, 1)]
+	$jugadores/jugador.get_node("Area2D/ColorRect").color = GestorJuego.colores_jugadores[0]
+	$jugadores/jugador2.get_node("Area2D/ColorRect").color = GestorJuego.colores_jugadores[1]
 	_colocar_jugador(0)
 	_colocar_jugador(1)
 	

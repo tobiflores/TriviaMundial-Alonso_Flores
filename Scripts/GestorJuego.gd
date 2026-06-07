@@ -10,6 +10,7 @@ var debe_mover: bool = false
 var jugador_que_mueve: int = 0
 var usos_cincuenta: Array[int] = [3, 3]
 var ganador: int = -1
+var colores_jugadores: Array[Color] = [Color(1, 0.3, 0.3), Color(0.3, 0.5, 1)]
 
 func marcar_pregunta_usada(pais: String, enunciado: String):
 	if not preguntas_usadas.has(pais):
