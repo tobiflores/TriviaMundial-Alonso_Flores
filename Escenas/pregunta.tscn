@@ -107,14 +107,14 @@ offset_bottom = 23.0
 [node name="Boton50" type="TextureButton" parent="." unique_id=1850822666]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.083000004
-anchor_top = 0.83300006
-anchor_right = 0.083000004
-anchor_bottom = 0.83300006
-offset_left = -55.616013
-offset_top = -44.784027
-offset_right = 501.384
-offset_bottom = 403.21594
+anchor_left = 0.123
+anchor_top = 0.79800004
+anchor_right = 0.123
+anchor_bottom = 0.79800004
+offset_left = -55.696
+offset_top = -45.104004
+offset_right = 501.30402
+offset_bottom = 402.896
 grow_vertical = 0
 scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("3_k1vya")
@@ -122,15 +122,30 @@ texture_pressed = ExtResource("4_6fbo8")
 texture_disabled = ExtResource("4_6fbo8")
 stretch_mode = 0
 
-[node name="usos" type="Label" parent="." unique_id=1688811409]
+[node name="usos50" type="Label" parent="." unique_id=1688811409]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -556.0
-offset_top = 516.0
-offset_right = -535.0
-offset_bottom = 562.0
+offset_left = -446.0
+offset_top = 578.0
+offset_right = -422.0
+offset_bottom = 624.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gt84")
+text = "3"
+
+[node name="usosLlamada" type="Label" parent="." unique_id=1925426435]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -339.0
+offset_top = 577.0
+offset_right = -315.0
+offset_bottom = 623.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
@@ -140,14 +155,14 @@ text = "3"
 [node name="BotonLlamada" type="TextureButton" parent="." unique_id=697145962]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.16700001
-anchor_top = 0.832
-anchor_right = 0.16700001
-anchor_bottom = 0.832
-offset_left = -55.384003
-offset_top = -45.136017
-offset_right = 500.61597
-offset_bottom = 403.864
+anchor_left = 0.21300001
+anchor_top = 0.799
+anchor_right = 0.21300001
+anchor_bottom = 0.799
+offset_left = -55.376022
+offset_top = -44.752045
+offset_right = 500.62396
+offset_bottom = 404.248
 scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("5_k1vya")
 texture_pressed = ExtResource("6_6fbo8")
@@ -223,6 +238,60 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_1gt84")
 text = "Continuar"
+
+[node name="Grafico" type="Panel" parent="." unique_id=1580074184]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.90000004
+anchor_top = 0.897
+anchor_right = 0.90200007
+anchor_bottom = 0.90300006
+offset_left = -81.80005
+offset_top = -50.25598
+offset_right = 116.895874
+offset_bottom = 66.85596
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Grafico" unique_id=1619254732]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainerA" type="HBoxContainer" parent="Grafico/VBoxContainer" unique_id=1336611468]
+layout_mode = 2
+
+[node name="Label-A" type="Label" parent="Grafico/VBoxContainer/HBoxContainerA" unique_id=1161502466]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="Grafico/VBoxContainer/HBoxContainerA" unique_id=1498776793]
+layout_mode = 2
+
+[node name="HBoxContainerB" type="HBoxContainer" parent="Grafico/VBoxContainer" unique_id=92537432]
+layout_mode = 2
+
+[node name="Label-B" type="Label" parent="Grafico/VBoxContainer/HBoxContainerB" unique_id=1782919362]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="Grafico/VBoxContainer/HBoxContainerB" unique_id=2081781398]
+layout_mode = 2
+
+[node name="HBoxContainerC" type="HBoxContainer" parent="Grafico/VBoxContainer" unique_id=1307776043]
+layout_mode = 2
+
+[node name="Label-C" type="Label" parent="Grafico/VBoxContainer/HBoxContainerC" unique_id=14244320]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="Grafico/VBoxContainer/HBoxContainerC" unique_id=526687842]
+layout_mode = 2
+
+[node name="HBoxContainerD" type="HBoxContainer" parent="Grafico/VBoxContainer" unique_id=1000193886]
+layout_mode = 2
+
+[node name="Label-D" type="Label" parent="Grafico/VBoxContainer/HBoxContainerD" unique_id=1724873441]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="Grafico/VBoxContainer/HBoxContainerD" unique_id=556329058]
+layout_mode = 2
 
 [connection signal="pressed" from="Boton50" to="." method="_on__50_pressed"]
 [connection signal="pressed" from="BotonLlamada" to="." method="_on_boton_llamada_pressed"]

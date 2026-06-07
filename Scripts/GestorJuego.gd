@@ -9,6 +9,7 @@ var posiciones: Array[int] = [0, 0]
 var debe_mover: bool = false
 var jugador_que_mueve: int = 0
 var usos_cincuenta: Array[int] = [3, 3]
+var usos_llamada: Array[int] = [3, 3]
 var ganador: int = -1
 var colores_jugadores: Array[Color] = [Color(1, 0.3, 0.3), Color(0.3, 0.5, 1)]
 
