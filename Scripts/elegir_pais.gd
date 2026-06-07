@@ -34,7 +34,7 @@ func _actualizar_botones():
 	$GridContainer/Button3: "italia",
 	$GridContainer/Button5: "japon"
 	}
-
+	var noHayPreguntas = true
 	for boton in paises:
 		var codigo = paises[boton]
 		var datos: DatosPais = load("res://data/paises/%s.tres" % codigo)
@@ -44,3 +44,7 @@ func _actualizar_botones():
 		if quedan.is_empty():
 			boton.modulate = Color.RED
 			boton.disabled = true
+		else:
+			noHayPreguntas = false
+	if noHayPreguntas:
+		get_tree().change_scene_to_file("res://Escenas/ganador.tscn")
