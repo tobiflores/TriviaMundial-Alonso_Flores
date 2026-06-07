@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://byk7eo5r4c0t1"]
+
+[ext_resource type="Script" uid="uid://7cnud8nv7keh" path="res://Scripts/ganador.gd" id="1_ym06y"]
+[ext_resource type="FontFile" uid="uid://bu2mkiafsdks0" path="res://Fuentes/ChangaOne-Regular.ttf" id="2_haps5"]
+[ext_resource type="Texture2D" uid="uid://cbko7klm2mmrn" path="res://Imagenes/trofeo.png" id="3_4gfxb"]
+[ext_resource type="AudioStream" uid="uid://m3givl7i60hc" path="res://Sonidos/victoria.mp3" id="3_7hydr"]
+
+[node name="Node2D" type="Node2D" unique_id=812922903]
+script = ExtResource("1_ym06y")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=180590533]
+offset_left = -11.0
+offset_right = 1177.0
+offset_bottom = 672.0
+color = Color(0.39215687, 0.08627451, 1, 1)
+
+[node name="Ganador" type="Label" parent="." unique_id=930302019]
+offset_left = 359.0
+offset_top = 169.0
+offset_right = 557.0
+offset_bottom = 259.0
+theme_override_fonts/font = ExtResource("2_haps5")
+theme_override_font_sizes/font_size = 45
+
+[node name="VolverAlMenu" type="Button" parent="." unique_id=25081190]
+offset_left = 454.0
+offset_top = 450.0
+offset_right = 715.0
+offset_bottom = 522.0
+text = "Volver al Menú"
+
+[node name="SonidoVictoria" type="AudioStreamPlayer2D" parent="." unique_id=1082058003]
+stream = ExtResource("3_7hydr")
+
+[node name="Trofeo" type="Sprite2D" parent="." unique_id=1286900686]
+position = Vector2(221, 423)
+scale = Vector2(0.7725451, 0.73647296)
+texture = ExtResource("3_4gfxb")
+
+[node name="Trofeo2" type="Sprite2D" parent="Trofeo" unique_id=798717434]
+position = Vector2(899.6239, -13.578216)
+scale = Vector2(0.99846464, 1.0194924)
+texture = ExtResource("3_4gfxb")
+
+[connection signal="pressed" from="VolverAlMenu" to="." method="_on_volver_al_menu_pressed"]

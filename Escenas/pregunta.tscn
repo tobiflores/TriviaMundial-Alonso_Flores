@@ -97,6 +97,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_1gt84")
 text = "¿Cuál de estas no forma parte de las 20 regiones de Italia?"
+autowrap_mode = 2
 
 [node name="Turno" type="Label" parent="." unique_id=1609211838]
 layout_mode = 0

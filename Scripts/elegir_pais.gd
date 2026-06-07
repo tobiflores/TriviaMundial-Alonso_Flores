@@ -10,7 +10,6 @@ func _ready() -> void:
 	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
 	var colores = [Color(1, 0.3, 0.3), Color(0.3, 0.5, 1)]
 	$Turno.modulate = colores[GestorJuego.jugadorActual]
-	$Turno.text = "Turno: %s" % GestorJuego.nombres[GestorJuego.jugadorActual]
 	$Puntaje1.modulate = colores[0]
 	$Puntaje1.text = "%s: %d" % [GestorJuego.nombres[0], GestorJuego.puntajes[0]]
 	$Puntaje2.modulate = colores[1]
@@ -28,17 +27,17 @@ func _al_clickear_bandera(codigo_pais: String):
 	
 func _actualizar_botones():
 	var paises = {
-		$GridContainer/Button6: "estadosunidos",
-		$GridContainer/Button: "argentina",
-		$GridContainer/Button4: "inglaterra",
-		$GridContainer/Button2: "francia",
-		$GridContainer/Button3: "italia",
-		$GridContainer/Button5: "japon"
+	$GridContainer/Button6: "estadosunidos",
+	$GridContainer/Button: "argentina",
+	$GridContainer/Button4: "inglaterra",
+	$GridContainer/Button2: "francia",
+	$GridContainer/Button3: "italia",
+	$GridContainer/Button5: "japon"
 	}
+
 	for boton in paises:
 		var codigo = paises[boton]
-		var ruta = "res://data/paises/%s.tres" % codigo
-		var datos: DatosPais = load(ruta)
+		var datos: DatosPais = load("res://data/paises/%s.tres" % codigo)
 		var quedan = datos.preguntas.filter(func(p):
 			return not GestorJuego.preguntaUsada(datos.pais, p.enunciado)
 		)

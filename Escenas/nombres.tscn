@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dge05ag0w21gp"]
 
-[ext_resource type="Script" path="res://Escenas/nombres.gd" id="1_4q6ss"]
+[ext_resource type="Script" uid="uid://tlklps0vb8ye" path="res://Scripts/nombres.gd" id="1_f40uu"]
 [ext_resource type="Texture2D" uid="uid://b4ui3ygdpmrxi" path="res://Imagenes/yellow-question-mark-background-with-text-space-quiz-symbol-vector.jpg" id="1_fa8ap"]
 [ext_resource type="FontFile" uid="uid://bu2mkiafsdks0" path="res://Fuentes/ChangaOne-Regular.ttf" id="3_f40uu"]
 
@@ -58,7 +58,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4q6ss")
+script = ExtResource("1_f40uu")
 
 [node name="Panel" type="Panel" parent="." unique_id=2042794522]
 layout_mode = 0

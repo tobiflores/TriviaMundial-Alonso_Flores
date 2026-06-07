@@ -9,6 +9,7 @@ var posiciones: Array[int] = [0, 0]
 var debe_mover: bool = false
 var jugador_que_mueve: int = 0
 var usos_cincuenta: Array[int] = [3, 3]
+var ganador: int = -1
 
 func marcar_pregunta_usada(pais: String, enunciado: String):
 	if not preguntas_usadas.has(pais):
@@ -34,3 +35,12 @@ func respuesta_incorrecta():
 func pasar_turno():
 	jugadorActual = (jugadorActual + 1) % 2
 	correctasConsecutivas = 0
+	
+func reiniciar():
+	puntajes = [0, 0]
+	posiciones = [0, 0]
+	jugadorActual = 0
+	correctasConsecutivas = 0
+	preguntas_usadas = {}
+	ganador = -1
+	nombres = ["Jugador 1", "Jugador 2"]

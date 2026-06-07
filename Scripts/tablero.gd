@@ -3,22 +3,23 @@ extends Control
 func _ready():
 	_colocar_jugador(0)
 	_colocar_jugador(1)
-	$jugadores/jugador.modulate = Color(1, 0.3, 0.3)
-	$jugadores/jugador2.modulate = Color(0.3, 0.5, 1) 
-
+	
 	if GestorJuego.debe_mover:
 		mover_jugador(GestorJuego.jugador_que_mueve)
 		GestorJuego.debe_mover = false
+		if GestorJuego.ganador != -1:
+			return
+	
 	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_file("res://Escenas/elegir_pais.tscn")
+
 func mover_jugador(jugador_idx: int):
 	GestorJuego.posiciones[jugador_idx] += 1
 	var nueva_pos = GestorJuego.posiciones[jugador_idx]
-
 	if nueva_pos >= 30:
-		print("%s ganó!" % GestorJuego.nombres[jugador_idx])
+		GestorJuego.ganador = jugador_idx
+		get_tree().change_scene_to_file("res://Escenas/ganador.tscn")
 		return
-
 	_colocar_jugador(jugador_idx)
 
 func _colocar_jugador(jugador_idx: int):
